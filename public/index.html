@@ -10,9 +10,9 @@
 <body>
     <div id='main'>
         <h1>Welcome friend!</h1>
-        <form type='submit' id='login-form'>
-            <input type='text' class='login-inp' id='name-inp' placeholder='username'/>
-            <input type='text' class='login-inp' id='password-inp' placeholder='password'/>
+        <form type='submit' action='sign-in' method= 'POST' id='login-form'>
+            <input type='text' class='login-inp' id='name-inp' placeholder='username' name='name'/>
+            <input type='text' class='login-inp' id='password-inp' placeholder='password' name='password'/>
             <button type='submit' id='login-btn'>Login</button>
             <!-- <button type='submit' id='register-btn'> Register</button> -->
         </form>

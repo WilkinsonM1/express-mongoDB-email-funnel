@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
 const User = require('./models/user');
+const { promisify } = require('util')
+
 
 const app = express();
 
@@ -37,6 +39,17 @@ app.post('/sign-up', (req, res) => {
    user.save();
 
   
+})
+
+app.post('/sign-in', (req, res) => {
+    let name = req.body.name
+    let password = req.body.password
+
+  let checkUser =   db.getCollection('users').find({name: `${name}`, password: `${password}`})
+  let checkUserPromise = promis
+
+    if(checkUser){console.log('heyo')}
+
 })
 
 app.listen(3000, () => {

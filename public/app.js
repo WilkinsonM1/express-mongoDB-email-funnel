@@ -10,9 +10,9 @@ const emailRegisterInp = document.getElementById('email-register-inp')
 const passwordRegisterInp= document.getElementById('password-register-inp');
 const registerBtn = document.getElementById('register-btn');
 
-// registerBtn.addEventListener('click', async (e) => {
-//     e.preventDefault();
-//   await fetch('http://localhost:3000/register', {
+// registerBtn.addEventListener('click',  () => {
+  
+//  fetch('http://localhost:3000/sign-up', {
 //        medthod: "POST",
 //        headers: {"content-type": "application/json"},
 //        body: JSON.stringify({
@@ -23,8 +23,9 @@ const registerBtn = document.getElementById('register-btn');
 
 
 //    });
-//    console.log('button works')
-// //    window.location.reload();
+   
+//  window.location.reload();
 // });
+
 
 

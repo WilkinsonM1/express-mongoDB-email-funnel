@@ -10,11 +10,21 @@
 <body>
         <div id='register'>
                 <h1>Register my friend!</h1>
+                <!-- <form type='submit 'id='register-form'>
+                    <input type='text' class='register-inp' id='name-register-inp' placeholder='username' />
+                    <input type='text' class='register-inp' id='email-register-inp' placeholder='email' />
+                    <input type='text' class='register-inp' id='password-register-inp' placeholder='password' />
+                    <button action='./index.html' type='submit' id='register-btn'>Submit</button>
+                    
+                </form> -->
+
+
+                <!-- I add the action and method to form and name to inputs so I don't need a fetch request in my script javascript-->
                 <form action='/sign-up' method='POST' id='register-form'>
                     <input type='text' class='register-inp' id='name-register-inp' placeholder='username' name='name'/>
                     <input type='text' class='register-inp' id='email-register-inp' placeholder='email' name='email'/>
                     <input type='text' class='register-inp' id='password-register-inp' placeholder='password' name='password'/>
-                    <button type='submit' id='register-btn'>Submit</button>
+                    <button action='./index.html' type='submit' id='register-btn'>Submit</button>
                     
                 </form>
         
