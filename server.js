@@ -21,9 +21,14 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
     let name = req.body.name
+    let email = req.body.email
+    let password = req.body.password
 
     let user = new User({
-        name: name
+        name: name,
+        email: email,
+        password: password
+
     });
     user.save();
 })
