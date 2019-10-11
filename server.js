@@ -22,7 +22,7 @@ app.get('/login', (req, res) => {
     res.send('hello')
 })
 
-app.post('/register', (req, res) => {
+app.post('/sign-up', (req, res) => {
     let name = req.body.name
     let email = req.body.email
     let password = req.body.password
@@ -33,7 +33,10 @@ app.post('/register', (req, res) => {
         password: password
 
     });
-    user.save();
+
+   user.save();
+
+  
 })
 
 app.listen(3000, () => {
